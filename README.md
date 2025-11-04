@@ -30,9 +30,9 @@
 Обе системы должны находится в одной подсети.
 
 #### Защищаемая система - Debian - enp0s8 - 192.168.56.105
-![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.1.png)
-#### Система злоумышленника - Kali Linux - eth1 - 192.168.56.103
 ![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.2.png)
+#### Система злоумышленника - Kali Linux - eth1 - 192.168.56.103
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.1.png)
 
 ### Ответ:
 
