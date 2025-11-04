@@ -30,9 +30,9 @@
 Обе системы должны находится в одной подсети.
 
 #### Защищаемая система - Debian - enp0s8 - 192.168.56.105
-![png]()
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.1.png)
 #### Система злоумышленника - Kali Linux - eth1 - 192.168.56.103
-![png]()
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.2.png)
 
 ### Ответ:
 
@@ -40,6 +40,18 @@
 Suricata сработал везде, кроме первого запроса -sA. В остальных же случаях лог Suricata выдает, что происходило подозрительное скарирование и классификация идет как "Потенциально опасный трафик" и "Возможна утечка информации".
 
 Fail2Ban во всех случаях молчал, но я подозреваю, что входящий трафик просто уже заблокирован ранее, когда я повторял упражнения из лекции. И о чем также видно из последнего скришота.
+
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.3.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.4.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.5.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.6.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.7.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.8.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.9.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.10.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.11.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.12.png)
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.13.png)
 
 
 ------
@@ -68,3 +80,14 @@ Fail2Ban во всех случаях молчал, но я подозреваю
 
 
 *В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.*
+### Ответ:
+
+Пароль не был подобран, так как атакующая машина попала в бан. 
+Получаем ошибку, что нет возможности соединиться с атакуемым хостом, так как в соединении отказано.
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.15.png)
+
+
+#### События Suricata 
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.14.png)
+#### События Fail2Ban
+![png](https://github.com/vajnichev/13-03-hw/blob/main/img/13.3.16.png)
